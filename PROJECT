@@ -1,0 +1,23 @@
+PROBLEM
+    I want to create a word game for my son.
+    I want to be able to spin six blocks, each with four sides and each side with a letter, so
+    that I have a reasonable chance of producing a word.
+    Some words can be four or five characters.
+    Words should singular, common nouns, verbs, adverbs, adjectives
+You can use this online dict - http://www.mso.anu.edu.au/~ralph/OPTED/
+
+SOLUTION OPTION #1
+    Find a list of words with 4,5,6 characters each.
+    For each, count the frequency of each character.
+    Take the top four. The naive assumption is that local optimums will produce a global
+    optimum.
+
+SOLUTION OPTION #2
+    Create a program that permutes the possible combinations for possible words that have
+    4,5,6 characters, so that each permutation, like
+    [s,d,a,e],[y,e,q,e]...[nnn,nnn], and for each permutation, check if each possible word
+    can be derived.
+    THIS MAY TAKE A VERY LONG TIME
+
+I am thinking the naive approach is good enough.
+
